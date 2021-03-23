@@ -1,6 +1,7 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import tablink from '../components/navigation';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -10,11 +11,11 @@ const Header = ({ siteTitle }) => (
       opacity: 0.8,
     }}
   >
-    <div
+    <nav
       style={{
         borderColor: 'white',
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 960,  
         padding: `1.45rem 1.0875rem`,
         textAlign: 'center',
       }}
@@ -30,15 +31,13 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <Link to="/page-2">page-2</Link>
+        <br></br>
+        <tablink to="/page-2">page-2</tablink>
       </h1>
-      <br></br>
-      <button>
-        <p>Taqueria menu <Link to="/page-2"> </Link></p>
-      </button>
-      <button>Contact Us</button>
-      <button>About Us</button>
-      <button>Our Locations</button>
-    </div>
+      <tablink to="/page-2">page-2</tablink>
+      <br></br>  
+    </nav>
   </header>
 )
 
