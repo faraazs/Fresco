@@ -9,10 +9,10 @@ const linkStyle = {
     textDecoration: 'none'
 };
 
-const tablink = ({ children, to }) => (
+const TabLink = ({ children, to }) => (
     <Link to={to} style={linkStyle}>
         {children}
     </Link>
 );
 
-export default tablink; 
+export default TabLink; 

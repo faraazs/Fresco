@@ -1,7 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import tablink from '../components/navigation';
+import TabLink from '../components/navigation';
+
+//
 
 const Header = ({ siteTitle }) => (
   <header
@@ -25,18 +27,19 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             borderColor: 'white',
-            color: `#ff7800`,
+            color: `orange`,
             textDecoration: `none`,
           }}
-        >
+          >
           {siteTitle}
-        </Link>
-        <Link to="/page-2">page-2</Link>
+          </Link>
         <br></br>
-        <tablink to="/page-2">page-2</tablink>
+        <TabLink to="/page-2">page-2</TabLink>
+        <TabLink to="/menu">Menu</TabLink>
+        <TabLink to="/deals">Deals</TabLink>
+        <TabLink to="/aboutus">About Us</TabLink>
+        <TabLink to="/locations">Our Locations</TabLink>
       </h1>
-      <tablink to="/page-2">page-2</tablink>
-      <br></br>  
     </nav>
   </header>
 )
