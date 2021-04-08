@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `FRESCO\nsupermarket`,
+    title: `FRESCO supermarket`,
     description: `Website for Fresco supermarket`,
     author: `Faraaz Sunesara`,
   },
