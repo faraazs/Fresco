@@ -5,7 +5,7 @@ const navbuttonStyle = {
     background: '#DADED4',
     color: 'black',
     border: '.15rem solid #bdc7ad',
-    borderRadius: '3rem',
+    borderRadius: '.75rem',
     display: 'inline-block',
     margin: '0.5rem 0.25rem 0rem 0.25rem',
     padding: '0.5rem 0.5rem 0.5rem 0.5rem',
